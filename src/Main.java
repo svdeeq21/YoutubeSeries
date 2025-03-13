@@ -1,5 +1,8 @@
 public class Main {
+  //Static Variable
     public static String name = "John";
+
+     //Instance Variables
     public String names;
     public int age;
     public Main(String names, int age) {
@@ -7,10 +10,11 @@ public class Main {
         this.age = age;
     }
     public static void main(String[] args) {
+      //Local Variable
       String name = "Doe";
-      System.out.println(name);  
-      System.out.println(Main.name);
-      Main obj = new Main("Jane", 30);
+      System.out.println(Main.name);  //Static Var
+      System.out.println(name);  //Local Var
+      Main obj = new Main("Jane", 30); //Instance Var
       System.out.println(obj.age);
     }
 
